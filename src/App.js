@@ -11,24 +11,31 @@ function App() {
 
   return (
     <div className="container">
-      <div className="section">
-        <div className="title has-text-centered">
-          React Todo
-        </div>
-      </div>
+      <div className="columns is-mobile">
+        <div className="column is-10 is-offset-1">
 
-      <div className="section">
-        <input type="search" 
-               className="input"
-               placeholder="Add an item..." />
-      </div>
+          <div className="section">
+            <div className="title has-text-centered">
+              React Todo
+            </div>
+          </div>
 
-      <div className="section">
-        <div className="subtitle has-text-centered">
-          Items
-        </div>
-        <div className="columns is-mobile">
-          <div className="column is-10 is-offset-1">
+          <div className="section">
+
+            <input
+              type="search" 
+              className="input"
+              placeholder="Add an item..."
+            />
+
+          </div>
+
+          <div className="section">
+
+            <div className="subtitle has-text-centered">
+              Items
+            </div>
+
             <div className="content">
               <ul>
                 {listItems.map(listItem =>
@@ -36,10 +43,11 @@ function App() {
                 )}
               </ul>
             </div>
+
           </div>
+
         </div>
       </div>
-
     </div>
   );
 }
