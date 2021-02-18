@@ -15,7 +15,7 @@ function App() {
         <div className="column is-10 is-offset-1">
 
           <div className="section">
-            <div className="title has-text-centered">
+            <div className="title is-size-2 has-text-centered">
               React Todo
             </div>
           </div>
@@ -36,7 +36,7 @@ function App() {
 
           <div className="section">
 
-            <div className="subtitle has-text-centered">
+            <div className="title is-size-3 has-text-centered">
               Items
             </div>
 
