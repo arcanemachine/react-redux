@@ -4,6 +4,8 @@ import './App.sass';
 
 function App() {
 
+  const listItems = ['feed cat', 'walk dog']
+
   return (
     <div className="container">
       <div className="section">
@@ -26,8 +28,9 @@ function App() {
           <div className="column is-10 is-offset-1">
             <div className="content">
               <ul>
-                <li>Hello</li>
-                <li>World!</li>
+                {listItems.map(listItem =>
+                  <li>{listItem}</li>
+                )}
               </ul>
             </div>
           </div>
