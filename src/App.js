@@ -1,29 +1,39 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import './App.sass';
 
 function App() {
+
   return (
-    <div className="hero">
-      <span className="title">
-        Hello world!
-      </span>
-      {/*
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      */}
+    <div className="container">
+      <div className="section">
+        <div className="title has-text-centered">
+          React Todo
+        </div>
+      </div>
+
+      <div className="section">
+        <input type="search" 
+               className="input"
+               placeholder="Add an item..." />
+      </div>
+
+      <div className="section">
+        <div className="subtitle has-text-centered">
+          Items
+        </div>
+        <div className="columns is-mobile">
+          <div className="column is-10 is-offset-1">
+            <div className="content">
+              <ul>
+                <li>Hello</li>
+                <li>World!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
